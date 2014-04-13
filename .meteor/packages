@@ -8,3 +8,8 @@ autopublish
 insecure
 bootstrap-3
 bootstrap-flatly
+iron-router
+spin
+iron-router-progress
+coffeescript
+accounts-base
