@@ -13,3 +13,5 @@ spin
 iron-router-progress
 coffeescript
 accounts-base
+accounts-password
+accounts-entry

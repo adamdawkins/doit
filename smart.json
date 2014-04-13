@@ -4,6 +4,7 @@
     "bootstrap-flatly": {},
     "iron-router": {},
     "spin": {},
-    "iron-router-progress": {}
+    "iron-router-progress": {},
+    "accounts-entry": {}
   }
 }
