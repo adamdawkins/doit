@@ -1,0 +1,21 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "bootstrap-3": {},
+      "bootstrap-flatly": {}
+    },
+    "packages": {
+      "bootstrap-3": {
+        "git": "https://github.com/mangasocial/meteor-bootstrap-3.git",
+        "tag": "v3.1.1-1",
+        "commit": "63dd38968828bb8963636df93e9a1c45e2dfe67e"
+      },
+      "bootstrap-flatly": {
+        "git": "https://github.com/grokbot/meteor-bootstrap-flatly.git",
+        "tag": "v0.0.3",
+        "commit": "ca8eb1730f1090b8d6e0db75efbe566a2ff27ee7"
+      }
+    }
+  }
+}
