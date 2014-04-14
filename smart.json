@@ -5,6 +5,8 @@
     "iron-router": {},
     "spin": {},
     "iron-router-progress": {},
-    "accounts-entry": {}
+    "accounts-entry": {},
+    "autoform": {},
+    "momentjs": {}
   }
 }

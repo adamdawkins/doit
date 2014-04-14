@@ -1,3 +1,16 @@
 <template name="dashboard">
   <h1>Dashboard</h1>
+  <div class="list-group">
+    {{#each tasks}}
+      {{>dashboard_task}}
+    {{/each}}
+  </div>
+  {{> quickForm collection="Tasks" id="new_task_form" type="insert"}}
+</template>
+
+<template name="dashboard_task">
+<a class="list-group-item" href="#">
+  <h4 class="list-group-item-heading"> {{title}} </h4>
+  <p class="list-group-item-text">{{description}}</p>
+</a>
 </template>
