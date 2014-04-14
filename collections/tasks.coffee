@@ -12,11 +12,15 @@
 
     creatorId:
       type: String
-      optional: true
 
     createdAt:
       type: Date
+    
+    status:
+      type: String
+      allowedValues: ['unstarted', 'in progress', 'completed']
       optional: true
+
  
 Meteor.methods(
   createTask: (task_params) ->
@@ -28,7 +32,16 @@ Meteor.methods(
     task = _.extend(task_params,
       creatorId: user._id
       createdAt: new Date()
+      status: 'unstarted'
     )
   
     Tasks.insert(task)
+
+  startTask: (task_id) ->
+    Tasks.update(
+      _id: task_id
+    ,
+      $set:
+        status: 'in progress'
+    )
 )

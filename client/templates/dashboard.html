@@ -9,10 +9,11 @@
 </template>
 
 <template name="dashboard_task">
-<a class="list-group-item" href="#">
+<a class="list-group-item success" href="#" id="{{_id}}">
   <h4 class="list-group-item-heading"> {{title}} </h4>
   <p class="list-group-item-text">{{description}}</p>
-  <p style="font-size:10px; font-style: italic">Created by: {{creator}} {{created}}</p>
+  <b>{{status}}</b>
+  <p style="font-size:10px; font-style: italic">Created by: {creator} {created}</p>
 </a>
 </template>
 
